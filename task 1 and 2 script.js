@@ -26,9 +26,6 @@ console.log(shoppingList);
 
 displayList();
 
-
-
-
 //Task 2: Filter and Search an Array
 
 let shoppingList = [];
