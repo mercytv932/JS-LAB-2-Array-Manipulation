@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f7;
+}
+
+.form {
+  width: 600;
+  background-color: pink;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35 px rgba(0, 0, 0, 0.12);
+  gap: 25px;
+}
+
+.displayItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: #05060f;
+  margin: 25px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.input {
+  max-width: 190px;
+  height: 30px;
+  background-color: #1416220a;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 1px solid;
+  font-size: 1rem;
+  transition:
+    border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: #05060fc2;
+}
+
+.addItem {
+  font-size: 14px;
+  padding: 7px 32px;
+  border-radius: 0.5rem;
+  background-color: bisque;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.addItem:hover {
+  text-decoration: underline;
+}
+
+.itemDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 5px 12px;
+  transition: 0.2s ease;
+}
+
+.itemDiv:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.itemDiv li {
+  margin: 0;
+  padding: 0;
+}
+
+.deleteBtn {
+  font-size: 14px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(119, 85, 90);
+}
+
+.deleteBtn:hover {
+  text-decoration: underline;
+  transform: translateY(-1px);
+  background-color: rgb(122, 51, 62);
+}

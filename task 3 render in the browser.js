@@ -19,11 +19,14 @@ function addItems() {
     return "Please Write Something!";
   } else {
     const itemDIv = document.createElement("div");
+    itemDIv.className = "itemDiv"
     const newItem = document.createElement("li");
+    newItem.className ="newItem"
     newItem.textContent = inputText;
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "x";
+    deleteBtn.className = "deleteBtn"
     deleteBtn.addEventListener("click", () => {
       itemDIv.remove();
     });
