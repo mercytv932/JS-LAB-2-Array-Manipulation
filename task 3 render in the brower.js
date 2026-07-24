@@ -18,8 +18,17 @@ function addItems() {
   if (inputText === "") {
     return "Please Write Something!";
   } else {
+    const itemDIv = document.createElement("div");
     const newItem = document.createElement("li");
     newItem.textContent = inputText;
-    displayItems.appendChild(newItem);
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "x";
+    deleteBtn.addEventListener("click", () => {
+      itemDIv.remove();
+    });
+    itemDIv.appendChild(newItem);
+    itemDIv.appendChild(deleteBtn);
+    displayItems.appendChild(itemDIv);
   }
 }
